@@ -117,6 +117,7 @@ Fruit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Fruit.BackgroundTransparency = 1.000
 Fruit.Position = UDim2.new(0, 0, 0.3995924, 0)
 Fruit.Size = UDim2.new(0.997526765, 0, 0.235054344, 0)
+Fruit.ZIndex = 0
 Fruit.Font = Enum.Font.SourceSans
 Fruit.Text = "FruitNPC"
 Fruit.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -164,55 +165,55 @@ TextLabel_2.TextWrapped = true
 
 -- Scripts:
 
-local function YAKEN_fake_script() -- TextButton_2.LocalScript 
+local function AVTIMVT_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2141,11,-49))
 	end)
 end
-coroutine.wrap(YAKEN_fake_script)()
-local function XYUSTM_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(AVTIMVT_fake_script)()
+local function ZSKLGH_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1796, 12, -257))
 	end)
 end
-coroutine.wrap(XYUSTM_fake_script)()
-local function DCQMTGP_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(ZSKLGH_fake_script)()
+local function NPMA_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(200, 10, 650))
 	end)
 end
-coroutine.wrap(DCQMTGP_fake_script)()
-local function SYKWX_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(NPMA_fake_script)()
+local function XONAEB_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-743, 12, -2312))
 	end)
 end
-coroutine.wrap(SYKWX_fake_script)()
-local function HVHW_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(XONAEB_fake_script)()
+local function SSVLYNH_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2251,  77, 3643))
 	end)
 end
-coroutine.wrap(HVHW_fake_script)()
-local function CJVD_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(SSVLYNH_fake_script)()
+local function LPDJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.ScrollingFrame.Visible = not script.Parent.ScrollingFrame.Visible
 	end)
 end
-coroutine.wrap(CJVD_fake_script)()
-local function FOTHXR_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(LPDJ_fake_script)()
+local function ERGIZ_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	fruit = {
@@ -249,16 +250,16 @@ local function FOTHXR_fake_script() -- TextButton_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FOTHXR_fake_script)()
-local function YYJQZE_fake_script() -- Fruit.LocalScript 
+coroutine.wrap(ERGIZ_fake_script)()
+local function VUUC_fake_script() -- Fruit.LocalScript 
 	local script = Instance.new('LocalScript', Fruit)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2566, 12, 248))
 	end)
 end
-coroutine.wrap(YYJQZE_fake_script)()
-local function TZCCBRB_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(VUUC_fake_script)()
+local function VOYBY_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -269,4 +270,4 @@ local function TZCCBRB_fake_script() -- TextButton_8.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TZCCBRB_fake_script)()
+coroutine.wrap(VOYBY_fake_script)()
