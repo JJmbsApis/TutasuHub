@@ -4,242 +4,592 @@
 -- Instances:
 
 local TutasoFruit = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
+local Frame = Instance.new("ImageLabel")
+local TextButton = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local borderPixel = Instance.new("ImageButton")
+local TextButton_2 = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local borderPixel_2 = Instance.new("ImageButton")
+local TextButton_3 = Instance.new("ImageButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local borderPixel_3 = Instance.new("ImageButton")
+local Main = Instance.new("Frame")
+local Tween = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
 local TextButton_4 = Instance.new("TextButton")
 local TextButton_5 = Instance.new("TextButton")
 local TextButton_6 = Instance.new("TextButton")
 local TextButton_7 = Instance.new("TextButton")
-local Fruit = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
 local TextButton_8 = Instance.new("TextButton")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
 local TextButton_9 = Instance.new("TextButton")
+local Bring = Instance.new("TextButton")
+local FruitNPC = Instance.new("TextButton")
+local LocalPlayer = Instance.new("Frame")
+local WS = Instance.new("TextBox")
+local TextButton_10 = Instance.new("TextButton")
+local JP = Instance.new("TextBox")
+local TextButton_11 = Instance.new("TextButton")
+local Credits = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local ImageButton = Instance.new("ImageButton")
 
 --Properties:
 
 TutasoFruit.Name = "TutasoFruit"
 TutasoFruit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-TutasoFruit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 TutasoFruit.ResetOnSpawn = false
 
+Frame.Name = "Frame"
 Frame.Parent = TutasoFruit
-Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Frame.Position = UDim2.new(0.0201182589, 0, 0.100739822, 0)
-Frame.Size = UDim2.new(0.515356898, 0, 0.425809741, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.071009919, 0, 0.0390625, 0)
+Frame.Size = UDim2.new(0.532051265, 0, 0.512907624, 0)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(99, 99, 99)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
 
+TextButton.Name = "TextButton"
 TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(-0.00214646338, 0, 0, 0)
-TextButton.Size = UDim2.new(1, 0, 0.200000003, 0)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Teleport"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+TextButton.Position = UDim2.new(0, 0, 0.0463576168, 0)
+TextButton.Size = UDim2.new(0.260240972, 0, 0.109271526, 0)
+TextButton.ZIndex = 2
+TextButton.Image = "rbxassetid://2790382281"
+TextButton.ImageColor3 = Color3.fromRGB(39, 39, 39)
+TextButton.ScaleType = Enum.ScaleType.Slice
+TextButton.SliceCenter = Rect.new(4, 4, 252, 252)
 
-ScrollingFrame.Parent = TextButton
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame.Position = UDim2.new(0, 0, 1, 0)
-ScrollingFrame.Size = UDim2.new(1, 0, 4, 0)
-ScrollingFrame.Visible = false
-ScrollingFrame.ZIndex = 5
-
-TextButton_2.Parent = ScrollingFrame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.Position = UDim2.new(0, 0, 0.569999993, 0)
-TextButton_2.Size = UDim2.new(1, 0, 0.189999998, 0)
-TextButton_2.ZIndex = 4
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Buggy"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextSize = 14.000
-
-TextButton_3.Parent = ScrollingFrame
-TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.Position = UDim2.new(0, 0, 0.189999998, 0)
-TextButton_3.Size = UDim2.new(1, 0, 0.189999998, 0)
-TextButton_3.ZIndex = 4
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "Jungle"
-TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.TextSize = 14.000
-
-TextButton_4.Parent = ScrollingFrame
-TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.Size = UDim2.new(1, 0, 0.189999998, 0)
-TextButton_4.ZIndex = 4
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = "Ilha 1"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.TextSize = 14.000
-
-TextButton_5.Parent = ScrollingFrame
-TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_5.Position = UDim2.new(0, 0, 0.379999995, 0)
-TextButton_5.Size = UDim2.new(1, 0, 0.189999998, 0)
-TextButton_5.ZIndex = 4
-TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = "Ice"
-TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_5.TextSize = 14.000
-
-TextButton_6.Parent = ScrollingFrame
-TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_6.Position = UDim2.new(0, 0, 0.75999999, 0)
-TextButton_6.Size = UDim2.new(1, 0, 0.189999998, 0)
-TextButton_6.ZIndex = 4
-TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "MarineFord"
-TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_6.TextSize = 14.000
-
-TextButton_7.Parent = Frame
-TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_7.BackgroundTransparency = 1.000
-TextButton_7.Position = UDim2.new(0, 0, 0.200000003, 0)
-TextButton_7.Size = UDim2.new(1, 0, 0.200000003, 0)
-TextButton_7.ZIndex = 0
-TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "GotoFruit"
-TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_7.TextScaled = true
-TextButton_7.TextSize = 14.000
-TextButton_7.TextWrapped = true
-
-Fruit.Name = "Fruit"
-Fruit.Parent = Frame
-Fruit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Fruit.BackgroundTransparency = 1.000
-Fruit.Position = UDim2.new(0, 0, 0.3995924, 0)
-Fruit.Size = UDim2.new(0.997526765, 0, 0.235054344, 0)
-Fruit.ZIndex = 0
-Fruit.Font = Enum.Font.SourceSans
-Fruit.Text = "FruitNPC"
-Fruit.TextColor3 = Color3.fromRGB(255, 255, 255)
-Fruit.TextScaled = true
-Fruit.TextSize = 14.000
-Fruit.TextWrapped = true
-
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Parent = TextButton
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.126641333, 0, 0.634646714, 0)
-TextLabel.Size = UDim2.new(0.73623693, 0, 0.199428231, 0)
-TextLabel.ZIndex = 0
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "AutoFarm"
+TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Main"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-TextButton_8.Parent = TextLabel
-TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_8.BackgroundTransparency = 1.000
-TextButton_8.Position = UDim2.new(1.00332785, 0, 0, 0)
-TextButton_8.Size = UDim2.new(0.186588928, 0, 1, 0)
-TextButton_8.ZIndex = 0
-TextButton_8.Font = Enum.Font.SourceSansBold
-TextButton_8.Text = "OFF"
-TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_8.TextScaled = true
-TextButton_8.TextSize = 14.000
-TextButton_8.TextWrapped = true
+borderPixel.Name = "borderPixel"
+borderPixel.Parent = TextButton
+borderPixel.AnchorPoint = Vector2.new(0.5, 0.5)
+borderPixel.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+borderPixel.BackgroundTransparency = 1.000
+borderPixel.Position = UDim2.new(0.5, 0, 0.5, 0)
+borderPixel.Size = UDim2.new(1.01851857, 0, 1.060606, 0)
+borderPixel.Image = "rbxassetid://2790382281"
+borderPixel.ImageColor3 = Color3.fromRGB(39, 39, 39)
+borderPixel.ScaleType = Enum.ScaleType.Slice
+borderPixel.SliceCenter = Rect.new(4, 4, 252, 252)
 
-TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-TextLabel_2.Position = UDim2.new(0, 0, 0.833609998, 0)
-TextLabel_2.Size = UDim2.new(0.995958984, 0, 0.163531139, 0)
-TextLabel_2.ZIndex = 0
+TextButton_2.Name = "TextButton"
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0, 0, 0.155629143, 0)
+TextButton_2.Size = UDim2.new(0.260240972, 0, 0.109271526, 0)
+TextButton_2.ZIndex = 2
+TextButton_2.Image = "rbxassetid://2790382281"
+TextButton_2.ImageColor3 = Color3.fromRGB(39, 39, 39)
+TextButton_2.ScaleType = Enum.ScaleType.Slice
+TextButton_2.SliceCenter = Rect.new(4, 4, 252, 252)
+
+TextLabel_2.Parent = TextButton_2
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_2.ZIndex = 2
 TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "AutoFarm don't working"
+TextLabel_2.Text = "LocalPlayer"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-TextLabel_3.Parent = Frame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TextLabel_3.Position = UDim2.new(0, 0, -0.199428231, 0)
-TextLabel_3.Size = UDim2.new(1.00239837, 0, 0.199428231, 0)
-TextLabel_3.Font = Enum.Font.Unknown
-TextLabel_3.Text = "Tutasu's Fruit HUB"
+borderPixel_2.Name = "borderPixel"
+borderPixel_2.Parent = TextButton_2
+borderPixel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+borderPixel_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+borderPixel_2.BackgroundTransparency = 1.000
+borderPixel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+borderPixel_2.Size = UDim2.new(1.01851857, 0, 1.060606, 0)
+borderPixel_2.Image = "rbxassetid://2790382281"
+borderPixel_2.ImageColor3 = Color3.fromRGB(39, 39, 39)
+borderPixel_2.ScaleType = Enum.ScaleType.Slice
+borderPixel_2.SliceCenter = Rect.new(4, 4, 252, 252)
+
+TextButton_3.Name = "TextButton"
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Position = UDim2.new(0, 0, 0.264900684, 0)
+TextButton_3.Size = UDim2.new(0.260240972, 0, 0.109271526, 0)
+TextButton_3.ZIndex = 2
+TextButton_3.Image = "rbxassetid://2790382281"
+TextButton_3.ImageColor3 = Color3.fromRGB(39, 39, 39)
+TextButton_3.ScaleType = Enum.ScaleType.Slice
+TextButton_3.SliceCenter = Rect.new(4, 4, 252, 252)
+
+TextLabel_3.Parent = TextButton_3
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Credits"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-TextButton_9.Parent = TutasoFruit
+borderPixel_3.Name = "borderPixel"
+borderPixel_3.Parent = TextButton_3
+borderPixel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+borderPixel_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+borderPixel_3.BackgroundTransparency = 1.000
+borderPixel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+borderPixel_3.Size = UDim2.new(1.01851857, 0, 1.060606, 0)
+borderPixel_3.Image = "rbxassetid://2790382281"
+borderPixel_3.ImageColor3 = Color3.fromRGB(39, 39, 39)
+borderPixel_3.ScaleType = Enum.ScaleType.Slice
+borderPixel_3.SliceCenter = Rect.new(4, 4, 252, 252)
+
+Main.Name = "Main"
+Main.Parent = Frame
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.202885479, 0, 0.0628396869, 0)
+Main.Size = UDim2.new(0.763342738, 0, 0.833159447, 0)
+
+Tween.Name = "Tween"
+Tween.Parent = Main
+Tween.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tween.BackgroundTransparency = 1.000
+Tween.Size = UDim2.new(0.989547014, 0, 0.178571433, 0)
+Tween.ZIndex = 2
+Tween.Font = Enum.Font.Unknown
+Tween.Text = "Teleport"
+Tween.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tween.TextScaled = true
+Tween.TextSize = 14.000
+Tween.TextWrapped = true
+
+Frame_2.Parent = Main
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(0.0174216032, 0, 0.121428572, 0)
+Frame_2.Size = UDim2.new(0.940766573, 0, 0.821428597, 0)
+Frame_2.Visible = false
+Frame_2.ZIndex = 2
+
+TextButton_4.Parent = Frame_2
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BackgroundTransparency = 1.000
+TextButton_4.Position = UDim2.new(0.0826002881, 0, 0.0661983937, 0)
+TextButton_4.Size = UDim2.new(0.429629624, 0, 0.217391297, 0)
+TextButton_4.Font = Enum.Font.SourceSansBold
+TextButton_4.Text = "MarineFord"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = Frame_2
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.BackgroundTransparency = 1.000
+TextButton_5.Position = UDim2.new(0.493711412, 0, 0.353936166, 0)
+TextButton_5.Size = UDim2.new(0.507407427, 0, 0.217391297, 0)
+TextButton_5.Font = Enum.Font.SourceSansBold
+TextButton_5.Text = "Deserto"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = Frame_2
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.BackgroundTransparency = 1.000
+TextButton_6.Position = UDim2.new(0.493711412, 0, 0.139873669, 0)
+TextButton_6.Size = UDim2.new(0.474074066, 0, 0.217391297, 0)
+TextButton_6.Font = Enum.Font.SourceSansBold
+TextButton_6.Text = "Jungle"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+
+TextButton_7.Parent = Frame_2
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.BackgroundTransparency = 1.000
+TextButton_7.Position = UDim2.new(0.0603780672, 0, 0.564941585, 0)
+TextButton_7.Size = UDim2.new(0.451851845, 0, 0.217391297, 0)
+TextButton_7.Font = Enum.Font.SourceSansBold
+TextButton_7.Text = "Ilha Inicial"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+
+TextButton_8.Parent = Frame_2
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.BackgroundTransparency = 1.000
+TextButton_8.Position = UDim2.new(0.0640817732, 0, 0.398705184, 0)
+TextButton_8.Size = UDim2.new(0.451851845, 0, 0.217391297, 0)
+TextButton_8.Font = Enum.Font.SourceSansBold
+TextButton_8.Text = "Gelo"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
+
+TextButton_9.Parent = Frame_2
 TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_9.Position = UDim2.new(0.926991105, 0, 0.0390624776, 0)
-TextButton_9.Size = UDim2.new(0.0575221255, 0, 0.0849184766, 0)
-TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.Text = " "
-TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BackgroundTransparency = 1.000
+TextButton_9.Position = UDim2.new(0.101118803, 0, 0.219425291, 0)
+TextButton_9.Size = UDim2.new(0.333333343, 0, 0.217391297, 0)
+TextButton_9.Font = Enum.Font.SourceSansBold
+TextButton_9.Text = "ClownIsland"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_9.TextScaled = true
 TextButton_9.TextSize = 14.000
 TextButton_9.TextWrapped = true
 
+Bring.Name = "Bring"
+Bring.Parent = Main
+Bring.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bring.BackgroundTransparency = 1.000
+Bring.Position = UDim2.new(0, 0, 0.178571433, 0)
+Bring.Size = UDim2.new(0.989547014, 0, 0.178571433, 0)
+Bring.ZIndex = 2
+Bring.Font = Enum.Font.Unknown
+Bring.Text = "Bring Fruit"
+Bring.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bring.TextScaled = true
+Bring.TextSize = 14.000
+Bring.TextWrapped = true
+
+FruitNPC.Name = "FruitNPC"
+FruitNPC.Parent = Main
+FruitNPC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FruitNPC.BackgroundTransparency = 1.000
+FruitNPC.Position = UDim2.new(5.8048542e-08, 0, 0.378314197, 0)
+FruitNPC.Size = UDim2.new(0.989547074, 0, 0.217391297, 0)
+FruitNPC.ZIndex = 2
+FruitNPC.Font = Enum.Font.SourceSansBold
+FruitNPC.Text = "Loja NPC"
+FruitNPC.TextColor3 = Color3.fromRGB(255, 255, 255)
+FruitNPC.TextScaled = true
+FruitNPC.TextSize = 14.000
+FruitNPC.TextWrapped = true
+
+LocalPlayer.Name = "LocalPlayer"
+LocalPlayer.Parent = Frame
+LocalPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayer.BackgroundTransparency = 1.000
+LocalPlayer.BorderColor3 = Color3.fromRGB(27, 42, 53)
+LocalPlayer.Position = UDim2.new(0.265209019, 0, 0.0658152625, 0)
+LocalPlayer.Size = UDim2.new(0.702490985, 0, 0.782574773, 0)
+LocalPlayer.Visible = false
+
+WS.Name = "WS"
+WS.Parent = LocalPlayer
+WS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WS.BackgroundTransparency = 1.000
+WS.Size = UDim2.new(1.00709224, 0, 0.190114066, 0)
+WS.Font = Enum.Font.Unknown
+WS.Text = "WalkSpeed ( Numeros)"
+WS.TextColor3 = Color3.fromRGB(255, 255, 255)
+WS.TextScaled = true
+WS.TextSize = 14.000
+WS.TextWrapped = true
+
+TextButton_10.Parent = WS
+TextButton_10.BackgroundColor3 = Color3.fromRGB(4, 255, 0)
+TextButton_10.Position = UDim2.new(0, 0, 0.959999979, 0)
+TextButton_10.Size = UDim2.new(0.992957771, 0, 1, 0)
+TextButton_10.Font = Enum.Font.SourceSansBold
+TextButton_10.Text = "Request"
+TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.TextScaled = true
+TextButton_10.TextSize = 14.000
+TextButton_10.TextWrapped = true
+
+JP.Name = "JP"
+JP.Parent = LocalPlayer
+JP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JP.BackgroundTransparency = 1.000
+JP.Position = UDim2.new(0, 0, 0.376425862, 0)
+JP.Size = UDim2.new(1.00709224, 0, 0.190114066, 0)
+JP.Font = Enum.Font.Unknown
+JP.Text = "JumpPower ( Numeros )"
+JP.TextColor3 = Color3.fromRGB(255, 255, 255)
+JP.TextScaled = true
+JP.TextSize = 14.000
+JP.TextWrapped = true
+
+TextButton_11.Parent = JP
+TextButton_11.BackgroundColor3 = Color3.fromRGB(4, 255, 0)
+TextButton_11.Position = UDim2.new(0, 0, 0.959999979, 0)
+TextButton_11.Size = UDim2.new(0.992957771, 0, 1, 0)
+TextButton_11.Font = Enum.Font.SourceSansBold
+TextButton_11.Text = "Request"
+TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.TextScaled = true
+TextButton_11.TextSize = 14.000
+TextButton_11.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.265209019, 0, 0.0658152625, 0)
+Credits.Size = UDim2.new(0.702490985, 0, 0.782574773, 0)
+Credits.Visible = false
+
+TextLabel_4.Parent = Credits
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0.971631229, 0, 0.277566552, 0)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "Aviso: Eu JSY, não estou sobre responsabilidade do risco de sua conta ser banida, tanto do roblox como do JOGO."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Credits
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0, 0, 0.277566552, 0)
+TextLabel_5.Size = UDim2.new(0.971631229, 0, 0.277566552, 0)
+TextLabel_5.Font = Enum.Font.Unknown
+TextLabel_5.Text = "UI: JSY Scripts"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Credits
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0, 0, 0.50190115, 0)
+TextLabel_6.Size = UDim2.new(0.971631229, 0, 0.277566552, 0)
+TextLabel_6.Font = Enum.Font.Unknown
+TextLabel_6.Text = "Scripting: JSY Scripts"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = TutasoFruit
+UIAspectRatioConstraint.AspectRatio = 1.296
+
+ImageButton.Parent = TutasoFruit
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Position = UDim2.new(0.873534739, 0, 0.0203804336, 0)
+ImageButton.Size = UDim2.new(0, 100, 0, 100)
+ImageButton.Image = "rbxassetid://2960851584"
+
 -- Scripts:
 
-local function HGBD_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2141,11,-49))
-	end)
-end
-coroutine.wrap(HGBD_fake_script)()
-local function JBWEATK_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_3)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1796, 12, -257))
-	end)
-end
-coroutine.wrap(JBWEATK_fake_script)()
-local function PVBNL_fake_script() -- TextButton_4.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_4)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(200, 10, 650))
-	end)
-end
-coroutine.wrap(PVBNL_fake_script)()
-local function PMKVY_fake_script() -- TextButton_5.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_5)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-743, 12, -2312))
-	end)
-end
-coroutine.wrap(PMKVY_fake_script)()
-local function JIJBZ_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_6)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2251,  77, 3643))
-	end)
-end
-coroutine.wrap(JIJBZ_fake_script)()
-local function DTLTDEW_fake_script() -- TextButton.LocalScript 
+local function CIHNXKN_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.ScrollingFrame.Visible = not script.Parent.ScrollingFrame.Visible
+		script.Parent.Parent.Parent.Main.Visible = not script.Parent.Parent.Parent.Main.Visible
+		script.Parent.Parent.Parent.LocalPlayer.Visible = false
+		script.Parent.Parent.Parent.Credits.Visible = false
 	end)
 end
-coroutine.wrap(DTLTDEW_fake_script)()
-local function NTIFY_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(CIHNXKN_fake_script)()
+local function OXNRCZR_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.LocalPlayer.Visible = not script.Parent.Parent.Parent.LocalPlayer.Visible
+		script.Parent.Parent.Parent.Credits.Visible = false
+	end)
+end
+coroutine.wrap(OXNRCZR_fake_script)()
+local function PZXYZH_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.LocalPlayer.Visible = false
+		script.Parent.Parent.Parent.Credits.Visible = not script.Parent.Parent.Parent.Credits.Visible
+	end)
+end
+coroutine.wrap(PZXYZH_fake_script)()
+local function ZSMJ_fake_script() -- Tween.LocalScript 
+	local script = Instance.new('LocalScript', Tween)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
+		script.Parent.Parent.FruitNPC.Visible = not script.Parent.Parent.FruitNPC.Visible
+		script.Parent.Parent.Bring.Visible = not script.Parent.Parent.Bring.Visible
+	end)
+end
+coroutine.wrap(ZSMJ_fake_script)()
+local function YQNSJU_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local teleport_table = {
+		location1 = Vector3.new(-2251,  77, 3643), -- your desired position
+		location2 = Vector3.new()  -- your desired position
+	}
+	
+	local tween_s = game:GetService('TweenService')
+	local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+	
+	local lp = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local v = teleport_table.location1
+			if lp.Character and lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+	end)
+end
+coroutine.wrap(YQNSJU_fake_script)()
+local function JDLOY_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local teleport_table = {
+		location1 = Vector3.new(228, 13, 3808), -- your desired position
+		location2 = Vector3.new()  -- your desired position
+	}
+	
+	local tween_s = game:GetService('TweenService')
+	local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+	
+	local lp = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local v = teleport_table.location1
+			if lp.Character and lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+	end)
+end
+coroutine.wrap(JDLOY_fake_script)()
+local function WAJDH_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local teleport_table = {
+		location1 = Vector3.new(1760, 12, -237), -- your desired position
+		location2 = Vector3.new()  -- your desired position
+	}
+	
+	local tween_s = game:GetService('TweenService')
+	local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+	
+	local lp = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local v = teleport_table.location1
+			if lp.Character and lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+	end)
+end
+coroutine.wrap(WAJDH_fake_script)()
+local function USKOPU_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
+
+	local teleport_table = {
+		location1 = Vector3.new(-152, 15, 620), -- your desired position
+		location2 = Vector3.new()  -- your desired position
+	}
+	
+	local tween_s = game:GetService('TweenService')
+	local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+	
+	local lp = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local v = teleport_table.location1
+			if lp.Character and lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+	end)
+end
+coroutine.wrap(USKOPU_fake_script)()
+local function LOWSFF_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	local teleport_table = {
+		location1 = Vector3.new(-1151, 21, -2992), -- your desired position
+		location2 = Vector3.new()  -- your desired position
+	}
+	
+	local tween_s = game:GetService('TweenService')
+	local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+	
+	local lp = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local v = teleport_table.location1
+			if lp.Character and lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+	end)
+end
+coroutine.wrap(LOWSFF_fake_script)()
+local function KWAUOR_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local teleport_table = {
+		location1 = Vector3.new(-2667, 12, 114), -- your desired position
+		location2 = Vector3.new()  -- your desired position
+	}
+	
+	local tween_s = game:GetService('TweenService')
+	local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+	
+	local lp = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local v = teleport_table.location1
+			if lp.Character and lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+	end)
+end
+coroutine.wrap(KWAUOR_fake_script)()
+local function VRMN_fake_script() -- Bring.GotoFruit 
+	local script = Instance.new('LocalScript', Bring)
 
 	fruit = {
 		"[EAT] Forka fruit";
@@ -275,32 +625,52 @@ local function NTIFY_fake_script() -- TextButton_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NTIFY_fake_script)()
-local function HCLYCP_fake_script() -- Fruit.LocalScript 
-	local script = Instance.new('LocalScript', Fruit)
+coroutine.wrap(VRMN_fake_script)()
+local function PILDA_fake_script() -- FruitNPC.LocalScript 
+	local script = Instance.new('LocalScript', FruitNPC)
 
+	local teleport_table = {
+		location1 = Vector3.new(-2566, 12, 248), -- your desired position
+		location2 = Vector3.new()  -- your desired position
+	}
+	
+	local tween_s = game:GetService('TweenService')
+	local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+	
+	local lp = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2566, 12, 248))
+		local v = teleport_table.location1
+			if lp.Character and lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
 	end)
 end
-coroutine.wrap(HCLYCP_fake_script)()
-local function TDJU_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_8)
+coroutine.wrap(PILDA_fake_script)()
+local function OSDECOT_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		if	script.Parent.Text == "OFF" then
-			script.Parent.Text = "ON"
-		elseif script.Parent.Text == "ON" then
-			script.Parent.Text = "OFF"
-		end
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.Text)
 	end)
 end
-coroutine.wrap(TDJU_fake_script)()
-local function XAJZ_fake_script() -- TextButton_9.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_9)
+coroutine.wrap(OSDECOT_fake_script)()
+local function BPTTWTJ_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(script.Parent.Parent.Text)
+	end)
+end
+coroutine.wrap(BPTTWTJ_fake_script)()
+local function RVSQN_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
 	end)
 end
-coroutine.wrap(XAJZ_fake_script)()
+coroutine.wrap(RVSQN_fake_script)()
