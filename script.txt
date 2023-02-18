@@ -9,8 +9,8 @@ local TextButton = Instance.new("ImageButton")
 local TextLabel = Instance.new("TextLabel")
 local borderPixel = Instance.new("ImageButton")
 local TextButton_2 = Instance.new("ImageButton")
-local TextLabel_2 = Instance.new("TextLabel")
 local borderPixel_2 = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
 local TextButton_3 = Instance.new("ImageButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local borderPixel_3 = Instance.new("ImageButton")
@@ -25,17 +25,28 @@ local TextButton_8 = Instance.new("TextButton")
 local TextButton_9 = Instance.new("TextButton")
 local Bring = Instance.new("TextButton")
 local FruitNPC = Instance.new("TextButton")
+local Haki = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
 local LocalPlayer = Instance.new("Frame")
-local WS = Instance.new("TextBox")
-local TextButton_10 = Instance.new("TextButton")
-local JP = Instance.new("TextBox")
-local TextButton_11 = Instance.new("TextButton")
-local Credits = Instance.new("Frame")
 local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_10 = Instance.new("TextButton")
+local Credits = Instance.new("Frame")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextButton_11 = Instance.new("ImageButton")
+local borderPixel_4 = Instance.new("ImageButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local Main2 = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextButton_12 = Instance.new("TextButton")
+local Infinite = Instance.new("TextButton")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local ImageButton = Instance.new("ImageButton")
+local BillboardGui = Instance.new("BillboardGui")
+local TextLabel_10 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local TextLabel_11 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -47,7 +58,7 @@ Frame.Name = "Frame"
 Frame.Parent = TutasoFruit
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
-Frame.Position = UDim2.new(0.071009919, 0, 0.0390625, 0)
+Frame.Position = UDim2.new(0.056586843, 0, 0.0305706523, 0)
 Frame.Size = UDim2.new(0.532051265, 0, 0.512907624, 0)
 Frame.Image = "rbxassetid://3570695787"
 Frame.ImageColor3 = Color3.fromRGB(99, 99, 99)
@@ -70,7 +81,7 @@ TextButton.SliceCenter = Rect.new(4, 4, 252, 252)
 TextLabel.Parent = TextButton
 TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel.Position = UDim2.new(0.515033782, 0, 0.469697118, 0)
 TextLabel.Size = UDim2.new(1, 0, 0.899999976, 0)
 TextLabel.ZIndex = 2
 TextLabel.Font = Enum.Font.SourceSansBold
@@ -96,26 +107,13 @@ TextButton_2.Name = "TextButton"
 TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 TextButton_2.BackgroundTransparency = 1.000
-TextButton_2.Position = UDim2.new(0, 0, 0.155629143, 0)
+TextButton_2.Position = UDim2.new(0, 0, 0.158999994, 0)
 TextButton_2.Size = UDim2.new(0.260240972, 0, 0.109271526, 0)
 TextButton_2.ZIndex = 2
 TextButton_2.Image = "rbxassetid://2790382281"
 TextButton_2.ImageColor3 = Color3.fromRGB(39, 39, 39)
 TextButton_2.ScaleType = Enum.ScaleType.Slice
 TextButton_2.SliceCenter = Rect.new(4, 4, 252, 252)
-
-TextLabel_2.Parent = TextButton_2
-TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextLabel_2.Size = UDim2.new(1, 0, 0.899999976, 0)
-TextLabel_2.ZIndex = 2
-TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "LocalPlayer"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
 
 borderPixel_2.Name = "borderPixel"
 borderPixel_2.Parent = TextButton_2
@@ -129,22 +127,36 @@ borderPixel_2.ImageColor3 = Color3.fromRGB(39, 39, 39)
 borderPixel_2.ScaleType = Enum.ScaleType.Slice
 borderPixel_2.SliceCenter = Rect.new(4, 4, 252, 252)
 
+TextLabel_2.Parent = TextButton_2
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.515033841, 0, 0.530303597, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Main2"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
 TextButton_3.Name = "TextButton"
 TextButton_3.Parent = Frame
 TextButton_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 TextButton_3.BackgroundTransparency = 1.000
-TextButton_3.Position = UDim2.new(0, 0, 0.264900684, 0)
+TextButton_3.Position = UDim2.new(0, 0, 0.377483487, 0)
 TextButton_3.Size = UDim2.new(0.260240972, 0, 0.109271526, 0)
 TextButton_3.ZIndex = 2
 TextButton_3.Image = "rbxassetid://2790382281"
 TextButton_3.ImageColor3 = Color3.fromRGB(39, 39, 39)
 TextButton_3.ScaleType = Enum.ScaleType.Slice
 TextButton_3.SliceCenter = Rect.new(4, 4, 252, 252)
+TextButton_3.SliceScale = 3.000
 
 TextLabel_3.Parent = TextButton_3
 TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_3.Position = UDim2.new(0.507516861, 0, 0.5, 0)
 TextLabel_3.Size = UDim2.new(1, 0, 0.899999976, 0)
 TextLabel_3.ZIndex = 2
 TextLabel_3.Font = Enum.Font.SourceSansBold
@@ -159,7 +171,7 @@ borderPixel_3.Parent = TextButton_3
 borderPixel_3.AnchorPoint = Vector2.new(0.5, 0.5)
 borderPixel_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 borderPixel_3.BackgroundTransparency = 1.000
-borderPixel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+borderPixel_3.Position = UDim2.new(0.49999997, 0, 0.499999881, 0)
 borderPixel_3.Size = UDim2.new(1.01851857, 0, 1.060606, 0)
 borderPixel_3.Image = "rbxassetid://2790382281"
 borderPixel_3.ImageColor3 = Color3.fromRGB(39, 39, 39)
@@ -287,12 +299,40 @@ FruitNPC.BackgroundTransparency = 1.000
 FruitNPC.Position = UDim2.new(5.8048542e-08, 0, 0.378314197, 0)
 FruitNPC.Size = UDim2.new(0.989547074, 0, 0.217391297, 0)
 FruitNPC.ZIndex = 2
-FruitNPC.Font = Enum.Font.SourceSansBold
-FruitNPC.Text = "Loja NPC"
+FruitNPC.Font = Enum.Font.Unknown
+FruitNPC.Text = "DevilFruit NPC"
 FruitNPC.TextColor3 = Color3.fromRGB(255, 255, 255)
 FruitNPC.TextScaled = true
 FruitNPC.TextSize = 14.000
 FruitNPC.TextWrapped = true
+
+Haki.Name = "Haki"
+Haki.Parent = Main
+Haki.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Haki.BackgroundTransparency = 1.000
+Haki.Position = UDim2.new(5.8048542e-08, 0, 0.592928529, 0)
+Haki.Size = UDim2.new(0.989547074, 0, 0.217391297, 0)
+Haki.ZIndex = 2
+Haki.Font = Enum.Font.Unknown
+Haki.Text = "Busoshoku NPC"
+Haki.TextColor3 = Color3.fromRGB(255, 255, 255)
+Haki.TextScaled = true
+Haki.TextSize = 14.000
+Haki.TextWrapped = true
+
+ESP.Name = "ESP"
+ESP.Parent = Main
+ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESP.BackgroundTransparency = 1.000
+ESP.Position = UDim2.new(0, 0, 0.806517005, 0)
+ESP.Size = UDim2.new(0.989547014, 0, 0.178571433, 0)
+ESP.ZIndex = 2
+ESP.Font = Enum.Font.Unknown
+ESP.Text = "ESP - Fruit"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
 
 LocalPlayer.Name = "LocalPlayer"
 LocalPlayer.Parent = Frame
@@ -303,52 +343,28 @@ LocalPlayer.Position = UDim2.new(0.265209019, 0, 0.0658152625, 0)
 LocalPlayer.Size = UDim2.new(0.702490985, 0, 0.782574773, 0)
 LocalPlayer.Visible = false
 
-WS.Name = "WS"
-WS.Parent = LocalPlayer
-WS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WS.BackgroundTransparency = 1.000
-WS.Size = UDim2.new(1.00709224, 0, 0.190114066, 0)
-WS.Font = Enum.Font.Unknown
-WS.Text = "WalkSpeed ( Numeros)"
-WS.TextColor3 = Color3.fromRGB(255, 255, 255)
-WS.TextScaled = true
-WS.TextSize = 14.000
-WS.TextWrapped = true
+TextLabel_4.Parent = LocalPlayer
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(3.60066323e-08, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0.805702627, 0, 0.183823526, 0)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "ESP Players"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
 
-TextButton_10.Parent = WS
-TextButton_10.BackgroundColor3 = Color3.fromRGB(4, 255, 0)
-TextButton_10.Position = UDim2.new(0, 0, 0.959999979, 0)
-TextButton_10.Size = UDim2.new(0.992957771, 0, 1, 0)
-TextButton_10.Font = Enum.Font.SourceSansBold
-TextButton_10.Text = "Request"
-TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.Parent = TextLabel_4
+TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.Position = UDim2.new(1, 0, 0, 0)
+TextButton_10.Size = UDim2.new(0.278260857, 0, 1, 0)
+TextButton_10.Font = Enum.Font.Unknown
+TextButton_10.Text = "CLICK"
+TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_10.TextScaled = true
 TextButton_10.TextSize = 14.000
 TextButton_10.TextWrapped = true
-
-JP.Name = "JP"
-JP.Parent = LocalPlayer
-JP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-JP.BackgroundTransparency = 1.000
-JP.Position = UDim2.new(0, 0, 0.376425862, 0)
-JP.Size = UDim2.new(1.00709224, 0, 0.190114066, 0)
-JP.Font = Enum.Font.Unknown
-JP.Text = "JumpPower ( Numeros )"
-JP.TextColor3 = Color3.fromRGB(255, 255, 255)
-JP.TextScaled = true
-JP.TextSize = 14.000
-JP.TextWrapped = true
-
-TextButton_11.Parent = JP
-TextButton_11.BackgroundColor3 = Color3.fromRGB(4, 255, 0)
-TextButton_11.Position = UDim2.new(0, 0, 0.959999979, 0)
-TextButton_11.Size = UDim2.new(0.992957771, 0, 1, 0)
-TextButton_11.Font = Enum.Font.SourceSansBold
-TextButton_11.Text = "Request"
-TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_11.TextScaled = true
-TextButton_11.TextSize = 14.000
-TextButton_11.TextWrapped = true
 
 Credits.Name = "Credits"
 Credits.Parent = Frame
@@ -358,24 +374,12 @@ Credits.Position = UDim2.new(0.265209019, 0, 0.0658152625, 0)
 Credits.Size = UDim2.new(0.702490985, 0, 0.782574773, 0)
 Credits.Visible = false
 
-TextLabel_4.Parent = Credits
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Size = UDim2.new(0.971631229, 0, 0.277566552, 0)
-TextLabel_4.Font = Enum.Font.Unknown
-TextLabel_4.Text = "Aviso: Eu JSY, não estou sobre responsabilidade do risco de sua conta ser banida, tanto do roblox como do JOGO."
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
 TextLabel_5.Parent = Credits
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0, 0, 0.277566552, 0)
 TextLabel_5.Size = UDim2.new(0.971631229, 0, 0.277566552, 0)
 TextLabel_5.Font = Enum.Font.Unknown
-TextLabel_5.Text = "UI: JSY Scripts"
+TextLabel_5.Text = "Aviso: Eu JSY, não estou sobre responsabilidade do risco de sua conta ser banida, tanto do roblox como do JOGO."
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
@@ -384,67 +388,205 @@ TextLabel_5.TextWrapped = true
 TextLabel_6.Parent = Credits
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0, 0, 0.50190115, 0)
+TextLabel_6.Position = UDim2.new(0, 0, 0.277566552, 0)
 TextLabel_6.Size = UDim2.new(0.971631229, 0, 0.277566552, 0)
 TextLabel_6.Font = Enum.Font.Unknown
-TextLabel_6.Text = "Scripting: JSY Scripts"
+TextLabel_6.Text = "UI: JSY Scripts"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextScaled = true
 TextLabel_6.TextSize = 14.000
 TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = Credits
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0, 0, 0.50190115, 0)
+TextLabel_7.Size = UDim2.new(0.971631229, 0, 0.277566552, 0)
+TextLabel_7.Font = Enum.Font.Unknown
+TextLabel_7.Text = "Scripting: JSY Scripts"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextButton_11.Name = "TextButton"
+TextButton_11.Parent = Frame
+TextButton_11.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextButton_11.BackgroundTransparency = 1.000
+TextButton_11.Position = UDim2.new(0, 0, 0.268211931, 0)
+TextButton_11.Size = UDim2.new(0.260240972, 0, 0.109271526, 0)
+TextButton_11.ZIndex = 2
+TextButton_11.Image = "rbxassetid://2790382281"
+TextButton_11.ImageColor3 = Color3.fromRGB(39, 39, 39)
+TextButton_11.ScaleType = Enum.ScaleType.Slice
+TextButton_11.SliceCenter = Rect.new(4, 4, 252, 252)
+
+borderPixel_4.Name = "borderPixel"
+borderPixel_4.Parent = TextButton_11
+borderPixel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+borderPixel_4.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+borderPixel_4.BackgroundTransparency = 1.000
+borderPixel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+borderPixel_4.Size = UDim2.new(1.01851857, 0, 1.060606, 0)
+borderPixel_4.Image = "rbxassetid://2790382281"
+borderPixel_4.ImageColor3 = Color3.fromRGB(39, 39, 39)
+borderPixel_4.ScaleType = Enum.ScaleType.Slice
+borderPixel_4.SliceCenter = Rect.new(4, 4, 252, 252)
+
+TextLabel_8.Parent = TextButton_11
+TextLabel_8.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.515033782, 0, 0.469697356, 0)
+TextLabel_8.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "LocalPlayer"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+Main2.Name = "Main2"
+Main2.Parent = Frame
+Main2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main2.BackgroundTransparency = 1.000
+Main2.Position = UDim2.new(0.278681427, 0, 0.0496688746, 0)
+Main2.Size = UDim2.new(0.69236517, 0, 0.900662243, 0)
+Main2.Visible = false
+
+TextLabel_9.Parent = Main2
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(3.60066323e-08, 0, 0, 0)
+TextLabel_9.Size = UDim2.new(0.805702627, 0, 0.183823526, 0)
+TextLabel_9.Font = Enum.Font.Unknown
+TextLabel_9.Text = "AutoFarm ( EM CONSTRUÇÃO )"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextButton_12.Parent = TextLabel_9
+TextButton_12.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_12.Position = UDim2.new(1, 0, 0, 0)
+TextButton_12.Size = UDim2.new(0.278260857, 0, 1, 0)
+TextButton_12.Font = Enum.Font.Unknown
+TextButton_12.Text = "OFF"
+TextButton_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_12.TextScaled = true
+TextButton_12.TextSize = 14.000
+TextButton_12.TextWrapped = true
+
+Infinite.Name = "Infinite"
+Infinite.Parent = Main2
+Infinite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Infinite.BackgroundTransparency = 1.000
+Infinite.Position = UDim2.new(0, 0, 0.178571433, 0)
+Infinite.Size = UDim2.new(0.989547014, 0, 0.178571433, 0)
+Infinite.ZIndex = 2
+Infinite.Font = Enum.Font.Unknown
+Infinite.Text = "Infinite Stats [ ESTÁ DANDO BAN ! )"
+Infinite.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infinite.TextScaled = true
+Infinite.TextSize = 14.000
+Infinite.TextWrapped = true
 
 UIAspectRatioConstraint.Parent = TutasoFruit
 UIAspectRatioConstraint.AspectRatio = 1.296
 
 ImageButton.Parent = TutasoFruit
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.Position = UDim2.new(0.873534739, 0, 0.0203804336, 0)
-ImageButton.Size = UDim2.new(0, 100, 0, 100)
+ImageButton.Position = UDim2.new(0.897573173, 0, 0.0696331561, 0)
+ImageButton.Size = UDim2.new(0.0450013876, 0, 0.0594735034, 0)
 ImageButton.Image = "rbxassetid://2960851584"
+
+BillboardGui.Parent = TutasoFruit
+BillboardGui.Enabled = false
+BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BillboardGui.Active = true
+BillboardGui.AlwaysOnTop = true
+BillboardGui.LightInfluence = 1.000
+BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+
+TextLabel_10.Parent = BillboardGui
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 115, 0)
+TextLabel_10.Position = UDim2.new(NAN, 0, NAN, 0)
+TextLabel_10.Size = UDim2.new(NAN, 0, NAN, 0)
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "HERE"
+TextLabel_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+Frame_3.Parent = TutasoFruit
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 0.500
+Frame_3.Size = UDim2.new(0, 832, 0, 589)
+Frame_3.ZIndex = 30
+
+TextLabel_11.Parent = Frame_3
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.379807681, 0, 0.456706285, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 51)
+TextLabel_11.ZIndex = 31
+TextLabel_11.Font = Enum.Font.SourceSansBold
+TextLabel_11.Text = "Carregando"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextStrokeTransparency = 0.000
+TextLabel_11.TextWrapped = true
 
 -- Scripts:
 
-local function CIHNXKN_fake_script() -- TextButton.LocalScript 
+local function GOCS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Main.Visible = not script.Parent.Parent.Parent.Main.Visible
-		script.Parent.Parent.Parent.LocalPlayer.Visible = false
-		script.Parent.Parent.Parent.Credits.Visible = false
+		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
+		script.Parent.Parent.LocalPlayer.Visible = false
+		script.Parent.Parent.Credits.Visible = false
+		script.Parent.Parent.Main2.Visible = false
 	end)
 end
-coroutine.wrap(CIHNXKN_fake_script)()
-local function OXNRCZR_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(GOCS_fake_script)()
+local function OBKQCI_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Main.Visible = false
-		script.Parent.Parent.Parent.LocalPlayer.Visible = not script.Parent.Parent.Parent.LocalPlayer.Visible
-		script.Parent.Parent.Parent.Credits.Visible = false
+		script.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.LocalPlayer.Visible = false
+		script.Parent.Parent.Main2.Visible = not script.Parent.Parent.Main2.Visible
+		script.Parent.Parent.Credits.Visible = false
 	end)
 end
-coroutine.wrap(OXNRCZR_fake_script)()
-local function PZXYZH_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(OBKQCI_fake_script)()
+local function CLGORHB_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Main.Visible = false
-		script.Parent.Parent.Parent.LocalPlayer.Visible = false
-		script.Parent.Parent.Parent.Credits.Visible = not script.Parent.Parent.Parent.Credits.Visible
+		script.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.LocalPlayer.Visible = false
+		script.Parent.Parent.Credits.Visible = not script.Parent.Parent.Credits.Visible
+		script.Parent.Parent.Main2.Visible = false
 	end)
 end
-coroutine.wrap(PZXYZH_fake_script)()
-local function ZSMJ_fake_script() -- Tween.LocalScript 
+coroutine.wrap(CLGORHB_fake_script)()
+local function GUNYOT_fake_script() -- Tween.LocalScript 
 	local script = Instance.new('LocalScript', Tween)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
 		script.Parent.Parent.FruitNPC.Visible = not script.Parent.Parent.FruitNPC.Visible
 		script.Parent.Parent.Bring.Visible = not script.Parent.Parent.Bring.Visible
+		script.Parent.Parent.Haki.Visible = not script.Parent.Parent.Haki.Visible
+		script.Parent.Parent.ESP.Visible = not script.Parent.Parent.ESP.Visible
 	end)
 end
-coroutine.wrap(ZSMJ_fake_script)()
-local function YQNSJU_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(GUNYOT_fake_script)()
+local function ZBSWDXP_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local teleport_table = {
@@ -467,8 +609,8 @@ local function YQNSJU_fake_script() -- TextButton_4.LocalScript
 			end
 	end)
 end
-coroutine.wrap(YQNSJU_fake_script)()
-local function JDLOY_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(ZBSWDXP_fake_script)()
+local function KWBDG_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local teleport_table = {
@@ -491,8 +633,8 @@ local function JDLOY_fake_script() -- TextButton_5.LocalScript
 			end
 	end)
 end
-coroutine.wrap(JDLOY_fake_script)()
-local function WAJDH_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(KWBDG_fake_script)()
+local function WVHPR_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local teleport_table = {
@@ -515,8 +657,8 @@ local function WAJDH_fake_script() -- TextButton_6.LocalScript
 			end
 	end)
 end
-coroutine.wrap(WAJDH_fake_script)()
-local function USKOPU_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(WVHPR_fake_script)()
+local function ZIAJX_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local teleport_table = {
@@ -539,8 +681,8 @@ local function USKOPU_fake_script() -- TextButton_7.LocalScript
 			end
 	end)
 end
-coroutine.wrap(USKOPU_fake_script)()
-local function LOWSFF_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(ZIAJX_fake_script)()
+local function RFESKRZ_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local teleport_table = {
@@ -563,8 +705,8 @@ local function LOWSFF_fake_script() -- TextButton_8.LocalScript
 			end
 	end)
 end
-coroutine.wrap(LOWSFF_fake_script)()
-local function KWAUOR_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(RFESKRZ_fake_script)()
+local function NMBWY_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local teleport_table = {
@@ -587,8 +729,8 @@ local function KWAUOR_fake_script() -- TextButton_9.LocalScript
 			end
 	end)
 end
-coroutine.wrap(KWAUOR_fake_script)()
-local function VRMN_fake_script() -- Bring.GotoFruit 
+coroutine.wrap(NMBWY_fake_script)()
+local function MVRXUW_fake_script() -- Bring.GotoFruit 
 	local script = Instance.new('LocalScript', Bring)
 
 	fruit = {
@@ -621,12 +763,21 @@ local function VRMN_fake_script() -- Bring.GotoFruit
 					local pos = Vector3.new(game.Workspace["[EAT] Gelo fruit"].Handle.Position.X,game.Workspace["[EAT] Gelo fruit"].Handle.Position.Y,game.Workspace["[EAT] Gelo fruit"].Handle.Position.Z)
 					player.Character:MoveTo(pos)
 				end
+				if tool.Name == "[EAT] Areia fruit" then
+					local pos = Vector3.new(game.Workspace["[EAT] Areia fruit"].Handle.Position.X,game.Workspace["[EAT] Areia fruit"].Handle.Position.Y,game.Workspace["[EAT] Areia fruit"].Handle.Position.Z)
+					player.Character:MoveTo(pos)
+				end
+				if tool.Name == "[EAT] Spirit fruit" then
+					local pos = Vector3.new(game.Workspace["[EAT] Spirit fruit"].Handle.Position.X,game.Workspace["[EAT] Spirit fruit"].Handle.Position.Y,game.Workspace["[EAT] Spirit fruit"].Handle.Position.Z)
+					player.Character:MoveTo(pos)
+				end
+				
 			end
 		end
 	end)
 end
-coroutine.wrap(VRMN_fake_script)()
-local function PILDA_fake_script() -- FruitNPC.LocalScript 
+coroutine.wrap(MVRXUW_fake_script)()
+local function FNVFXL_fake_script() -- FruitNPC.LocalScript 
 	local script = Instance.new('LocalScript', FruitNPC)
 
 	local teleport_table = {
@@ -649,28 +800,207 @@ local function PILDA_fake_script() -- FruitNPC.LocalScript
 			end
 	end)
 end
-coroutine.wrap(PILDA_fake_script)()
-local function OSDECOT_fake_script() -- TextButton_10.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_10)
+coroutine.wrap(FNVFXL_fake_script)()
+local function HOOR_fake_script() -- Haki.LocalScript 
+	local script = Instance.new('LocalScript', Haki)
 
+	local teleport_table = {
+		location1 = Vector3.new(-1302, 38, -2752), -- your desired position
+		location2 = Vector3.new()  -- your desired position
+	}
+	
+	local tween_s = game:GetService('TweenService')
+	local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+	
+	local lp = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.Text)
+		local v = teleport_table.location1
+			if lp.Character and lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
 	end)
 end
-coroutine.wrap(OSDECOT_fake_script)()
-local function BPTTWTJ_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(HOOR_fake_script)()
+local function OJSIGRB_fake_script() -- ESP.EspFruit 
+	local script = Instance.new('LocalScript', ESP)
+
+	fruit = {
+		"[EAT] Forka fruit";
+		"[EAT] Fogo fruit";
+		"[EAT] Separa fruit";
+	}
+	 
+	script.Parent.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+		for i, tool in pairs(game.Workspace:GetChildren()) do
+			for i, fruit in pairs(fruit)do
+				if tool.Name == "[EAT] Forka fruit" then
+					local esp = script.Parent.Parent.Parent.Parent.Highlight:Clone()
+					esp.Parent = tool.Handle
+					local esp2 = script.Parent.Parent.Parent.Parent.BillboardGui:Clone()
+					esp2.Parent = tool.Handle
+					esp2.Enabled = true
+				end
+				if tool.Name == "[EAT] Fogo fruit" then
+					local esp = script.Parent.Parent.Parent.Parent.Highlight:Clone()
+					esp.Parent = tool.Handle
+					local esp2 = script.Parent.Parent.Parent.Parent.BillboardGui:Clone()
+					esp2.Parent = tool.Handle
+					esp2.Enabled = true
+				end
+				if tool.Name == "[EAT] Separa fruit" then
+					local esp = script.Parent.Parent.Parent.Parent.Highlight:Clone()
+					esp.Parent = tool.Handle
+					local esp2 = script.Parent.Parent.Parent.Parent.BillboardGui:Clone()
+					esp2.Parent = tool.Handle
+					esp2.Enabled = true
+				end
+				if tool.Name == "[EAT] Massa fruit" then
+					local esp = script.Parent.Parent.Parent.Parent.Highlight:Clone()
+					esp.Parent = tool.Handle
+					local esp2 = script.Parent.Parent.Parent.Parent.BillboardGui:Clone()
+					esp2.Parent = tool.Handle
+					esp2.Enabled = true
+				end
+				if tool.Name == "[EAT] Gelo fruit" then
+					local esp = script.Parent.Parent.Parent.Parent.Highlight:Clone()
+					esp.Parent = tool.Handle
+					local esp2 = script.Parent.Parent.Parent.Parent.BillboardGui:Clone()
+					esp2.Parent = tool.Handle
+					esp2.Enabled = true
+				end
+				if tool.Name == "[EAT] Areia fruit" then
+					local esp = script.Parent.Parent.Parent.Parent.Highlight:Clone()
+					esp.Parent = tool.Handle
+					local esp2 = script.Parent.Parent.Parent.Parent.BillboardGui:Clone()
+					esp2.Parent = tool.Handle
+					esp2.Enabled = true
+				end
+				if tool.Name == "[EAT] Spirit fruit" then
+					local esp = script.Parent.Parent.Parent.Parent.Highlight:Clone()
+					esp.Parent = tool.Handle
+					local esp2 = script.Parent.Parent.Parent.Parent.BillboardGui:Clone()
+					esp2.Parent = tool.Handle
+					esp2.Enabled = true
+				end
+				
+			end
+		end
+	end)
+end
+coroutine.wrap(OJSIGRB_fake_script)()
+local function QTHKF_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	local Players = game:GetService("Players"):GetChildren()
+	local RunService = game:GetService("RunService")
+	local highlight = Instance.new("Highlight")
+	highlight.Name = "Highlight"
+	script.Parent.MouseButton1Click:Connect(function()
+	for i, v in pairs (Players) do
+		repeat wait() until v.Character
+		if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+			local highlightClone = highlight:Clone()
+			highlightClone.Adornee = v.Character
+			highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart")
+			highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+			highlightClone.Name = "Highlight"
+		else
+			v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight"):Destroy()
+		end
+		end
+	end)
+end
+coroutine.wrap(QTHKF_fake_script)()
+local function OPNNA_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(script.Parent.Parent.Text)
+		script.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.LocalPlayer.Visible = not script.Parent.Parent.LocalPlayer.Visible
+		script.Parent.Parent.Main2.Visible = false
+		script.Parent.Parent.Credits.Visible = false
 	end)
 end
-coroutine.wrap(BPTTWTJ_fake_script)()
-local function RVSQN_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(OPNNA_fake_script)()
+local function NKJPYS_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "OFF" then
+			script.Parent.Text = "ON"
+			script.Parent.BackgroundColor = BrickColor.new("Neon green")
+		else
+			script.Parent.Text = "OFF"
+			script.Parent.BackgroundColor = BrickColor.new("Really red")
+		end
+	end)
+end
+coroutine.wrap(NKJPYS_fake_script)()
+local function XGKGE_fake_script() -- Infinite.Infinite 
+	local script = Instance.new('LocalScript', Infinite)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:Kick("Banned: Você foi banido dessa Experiência por uso de Exploits Author: arthur11223344556688")
+	end)
+end
+coroutine.wrap(XGKGE_fake_script)()
+local function CNVC_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end
+coroutine.wrap(CNVC_fake_script)()
+local function LOFUDA_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
 	end)
 end
-coroutine.wrap(RVSQN_fake_script)()
+coroutine.wrap(LOFUDA_fake_script)()
+local function XZBUAUL_fake_script() -- TutasoFruit.KeyCode 
+	local script = Instance.new('LocalScript', TutasoFruit)
+
+	UIS = game:GetService("UserInputService")
+	Key = Enum.KeyCode.LeftControl
+		UIS.InputBegan:Connect(function(keycode)
+		if keycode == Key then
+			script.Parent.Frame.Visible = not script.Parent.Frame.Visible 
+		end
+		end)
+end
+coroutine.wrap(XZBUAUL_fake_script)()
+local function YJDS_fake_script() -- TextLabel_11.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_11)
+
+	script.Parent.Text = "Carregando... (1)"
+	wait(1)
+	script.Parent.Text = "Carregando... (2)"
+	wait(1)
+	script.Parent.Text = "Carregando... (3)"
+	wait(1)
+	script.Parent.Text = "Carregando... (4)"
+	wait(1)
+	script.Parent.Text = "Carregando... (5)"
+	wait(1)
+	script.Parent.Text = "Carregando... (6)"
+	wait(1)
+	script.Parent.Text = "Carregando... (7)"
+	wait(1)
+end
+coroutine.wrap(YJDS_fake_script)()
+local function JHLY_fake_script() -- Frame_3.LocalScript 
+	local script = Instance.new('LocalScript', Frame_3)
+
+	wait(7)
+	script.Parent.Visible = false
+end
+coroutine.wrap(JHLY_fake_script)()
